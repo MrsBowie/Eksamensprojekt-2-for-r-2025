@@ -9,18 +9,13 @@
    src: url(./Text/tt-marxiana-trial.antiqua.ttf);
 }
 
-
 body {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
     background-color: #f7a5d0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: font;
+}
 
-   font-family: font;
+#start {
+    display: block;
 }
 
 h1 {
@@ -28,20 +23,32 @@ h1 {
     font-size: 5em;
 }
 
-#vid {
-    position: fixed;
+p {
+    text-align: center;
+    font-size: 3em;
+}
 
-    width: 40%;
+#vid {
+    width: 50%;
     height: auto;
 
-    display: block;
-    margin: 0 auto;
-    z-index: -1;
+    margin-right: auto;
+    margin-left: auto;
+    
+    display: none;
 }
 
 #clicklogo {
+    position: relative;
+    width: 20%;
+    height: auto;
 
+
+    animation-name: rotation; 
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
+
 
 
 /*baggrunds animation*/
@@ -167,7 +174,7 @@ h1 {
 
 
 
-/*rotation af firkant*/
+/*rotation af cirkler/firkanter*/
 @keyframes animate {
 
     0%{
@@ -183,3 +190,29 @@ h1 {
     }
 
 }
+
+/*logo animation*/
+  @keyframes rotation {
+    0%   {
+        top: 20px;
+        left: 925px;
+    } 
+    25%  {
+        top: 20px;
+        left: 925px;
+        rotate: 10deg;
+    }
+    50%  {
+        top: 20px;
+        left: 925px;
+    }
+    75%  {
+        top: 20px;
+        left: 925px;
+        rotate: -10deg;
+    }
+    100% {
+        top: 20px;
+        left: 925px;
+    }
+  }
