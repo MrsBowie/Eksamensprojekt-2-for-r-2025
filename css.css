@@ -28,21 +28,24 @@ p {
     font-size: 3em;
 }
 
+#thevid {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #vid {
     width: 50%;
     height: auto;
-
-    margin-right: auto;
-    margin-left: auto;
-    
-    display: none;
 }
 
 #clicklogo {
-    position: relative;
     width: 20%;
     height: auto;
-
+    position: relative; /* relative for animation */
+    left: 50%;
+    transform: translateX(-50%);
 
     animation-name: rotation; 
     animation-duration: 10s;
